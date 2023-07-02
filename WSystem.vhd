@@ -22,3 +22,45 @@ end process;
 
 CMB_PROC : process(T,L,M,PS)
 begin
+	case PS is 
+		when ST0 =>
+			if (TIN = '1' or LIN = '1') and MIN <= "001" then 
+			NS <= ST1;
+			STATE <= '1';
+			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+			SEG <= "0110111";
+			elsif (TIN = '0' and LIN = '1') and MIN <= "011" then
+			NS <= ST1;
+			STATE <= '1';
+			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+			SEG <= "0110111";
+			else
+			NS <= ST0;
+			STATE <= '0';
+			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+			SEG <= "0000001";
+			end if;
+		when ST1 =>
+			if (TIN = '1' or LIN = '1') and MIN >= "011" then
+			NS <= ST0;
+			STATE <= '0';
+			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+			SEG <= "0000001";
+			elsif M >= "111" then
+			NS <= ST0;
+			STATE <= '0';
+			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+			SEG <= "0000001";
+			else
+			NS <= ST1;
+			STATE <= '1';
+			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+			SEG <= "0110111";
+			end if;
+		when others =>
+			NS <= ST0;
+			STATE <= '0';
+			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+			SEG <= "0000001";
+	end case;
+end process;

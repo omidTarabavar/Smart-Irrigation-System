@@ -8,3 +8,41 @@ entity WSystem is
 		MOUT : out std_logic_vector(2 downto 0);
 		SEG : out std_logic_vector(6 downto 0));
 end WSystem;
+
+architecture WS of WSystem is
+type STATE_TYPE is (ST0,ST1);
+signal PS,NS : STATE_TYPE;
+
+CLK_PROC :  process(RESET,NS,CLK)
+begin
+	if (RESET = '1') then PS <= ST0;
+	elsif (rising_edge(CLK) then PS <= NS;
+	end if
+end process;
+
+CMB_PROC : process(T,L,M,PS)
+begin
+case PS is 
+	when ST0 =>
+		if (TIN = '1' or LIN = '1') and MIN <= "001" then 
+		NS <= ST1;
+		STATE <= '1';
+		LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+		SEG <= "0110111";
+		elsif (TIN = '0' and LIN = '1') and MIN <= "011" then
+		NS <= ST1;
+		STATE <= '1';
+		LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+		SEG <= "0110111";
+		else
+		NS <= ST0;
+		STATE <= '0';
+		LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+		SEG <= "0000001";
+		end if;
+	when ST1 =>
+		if (TIN = '1' or LIN = '1') and MIN >= "011" then
+		NS <= ST0;
+		STATE <= '0';
+		LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
+		SEG <= "0000001";
