@@ -12,15 +12,15 @@ end WSystem;
 architecture WS of WSystem is
 type STATE_TYPE is (ST0,ST1);
 signal PS,NS : STATE_TYPE;
-
+begin
 CLK_PROC :  process(RESET,NS,CLK)
 begin
 	if (RESET = '1') then PS <= ST0;
-	elsif (rising_edge(CLK) then PS <= NS;
-	end if
+	elsif rising_edge(CLK) then PS <= NS;
+	end if;
 end process;
 
-CMB_PROC : process(T,L,M,PS)
+CMB_PROC : process(TIN,LIN,MIN,PS)
 begin
 	case PS is 
 		when ST0 =>
@@ -46,7 +46,7 @@ begin
 			STATE <= '0';
 			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
 			SEG <= "0000001";
-			elsif M >= "111" then
+			elsif MIN >= "111" then
 			NS <= ST0;
 			STATE <= '0';
 			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
@@ -64,3 +64,4 @@ begin
 			SEG <= "0000001";
 	end case;
 end process;
+end architecture;
