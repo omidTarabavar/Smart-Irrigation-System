@@ -29,7 +29,7 @@ begin
 			STATE <= '1';
 			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
 			SEG <= "0110111";
-			elsif (TIN = '0' and LIN = '1') and MIN <= "011" then
+			elsif (TIN = '0' and LIN = '0') and MIN <= "011" then
 			NS <= ST1;
 			STATE <= '1';
 			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;

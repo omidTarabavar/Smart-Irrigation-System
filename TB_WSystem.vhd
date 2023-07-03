@@ -31,6 +31,19 @@ begin
 	wait for CLK_PERIOD / 2;
 end process;
 
-WSYSTEM: WSystem port map (
+WS: WSystem port map (
 		TIN => TIN1, LIN => LIN1, RESET => RESET1, CLK => CLK1, MIN => MIN1,
 		LOUT => LOUT1, TOUT => TOUT1, STATE => STATE1, MOUT => MOUT1, SEG => SEG1);
+
+SIM_PROC: process
+begin
+	TIN1 <= '0'; LIN1 <= '0'; MIN1 <= "101"; wait for 100 ns;
+	TIN1 <= '1'; LIN1 <= '1'; MIN1 <= "101"; wait for 100 ns;
+	TIN1 <= '1'; LIN1 <= '1'; MIN1 <= "001"; wait for 100 ns;
+	TIN1 <= '1'; LIN1 <= '1'; MIN1 <= "001"; wait for 100 ns;
+	TIN1 <= '0'; LIN1 <= '0'; MIN1 <= "101"; wait for 100 ns;
+	TIN1 <= '1'; LIN1 <= '0'; MIN1 <= "101"; wait for 100 ns;
+	TIN1 <= '0'; LIN1 <= '0'; MIN1 <= "001"; wait for 100 ns;
+	TIN1 <= '0'; LIN1 <= '1'; MIN1 <= "111"; wait for 100 ns;
+end process;
+end architecture;

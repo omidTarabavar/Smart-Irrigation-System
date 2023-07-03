@@ -1,0 +1,264 @@
+.|vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!s107 vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!i113 1
+R106
+R15
+R22
+Pvital_timing
+R21
+R20
+R3
+31
+b1
+R24
+!i10b 1
+R5
+R70
+R7
+8vhdl_src/vital2000/timing_p_2000.vhd
+Fvhdl_src/vital2000/timing_p_2000.vhd
+l0
+L70
+VJ>EBealN09f8GzldA[z2>3
+!s100 J>EBealN09f8GzldA[z2>3
+R10
+!s108 1417588119.011626
+!s90 -debug|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_p_2000.vhd|
+!s107 vhdl_src/vital2000/timing_p_2000.vhd|
+!i113 1
+R106
+R15
+Bbody
+DPx4 work 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R21
+R20
+R3
+31
+R24
+!i10b 1
+R5
+8vhdl_src/vital2000/timing_b_2000.vhd
+Fvhdl_src/vital2000/timing_b_2000.vhd
+l0
+L49
+VKEim8d[eJ5dE^:mEG0P3S0
+!s100 KEim8d[eJ5dE^:mEG0P3S0
+R10
+!s108 1417588119.073749
+!s90 -debug|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_b_2000.vhd|
+!s107 vhdl_src/vital2000/timing_b_2000.vhd|
+!i113 1
+R106
+R15
+R22
+m255
+K4
+z2
+!s8c locked
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+d/u/qa/buildsites/10.4/builds/linux/modeltech
+Penv
+Z0 OL;C;10.4;61
+32
+b1
+Z1 !s110 1417588115
+!i10b 1
+Z2 OP;C;10.4;61
+Z3 w1417583464
+Z4 d$MODEL_TECH/..
+Z5 8vhdl_src/std/env.vhd
+Z6 Fvhdl_src/std/env.vhd
+l0
+L1
+Vd?`1ck@NdeD@H3RZG7FgZ2
+!s100 d?`1ck@NdeD@H3RZG7FgZ2
+Z7 OE;C;10.4;61
+Z8 !s108 1417588115.854928
+Z9 !s90 -debug|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/env.vhd|
+Z10 !s107 vhdl_src/std/env.vhd|
+!i113 1
+Z11 o-debug -work std -dirpath {$MODEL_TECH/..}
+Z12 tExplicit 1
+Bbody
+DPx4 work 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R0
+32
+R1
+!i10b 1
+R2
+l0
+L15
+VGO=IeNa]6JLe2BRN4G<kA2
+!s100 GO=IeNa]6JLe2BRN4G<kA2
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Z13 nbody
+Pstandard
+R0
+33
+R1
+!i10b 1
+R2
+R3
+R4
+8vhdl_src/std/standard.vhd
+Fvhdl_src/std/standard.vhd
+l0
+L8
+VofRa6alAEoSE^5WcJ^O]C2
+!s100 ofRa6alAEoSE^5WcJ^O]C2
+R7
+!s108 1417588115.795954
+!s90 -debug|-s|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/standard.vhd|
+!s107 vhdl_src/std/standard.vhd|
+!i113 1
+o-debug -s -2008 -work std -dirpath {$MODEL_TECH/..}
+R12
+Ptextio
+R0
+33
+b1
+R1
+!i10b 1
+R2
+Z14 w1416616498
+R4
+Z15 8vhdl_src/std/textio.vhd
+Z16 Fvhdl_src/std/textio.vhd
+l0
+L1
+VzE1`LPoLg^DX3Oz^4Fj1K3
+!s100 zE1`LPoLg^DX3Oz^4Fj1K3
+R7
+Z17 !s108 1417588115.910091
+Z18 !s90 -debug|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/textio.vhd|
+Z19 !s107 vhdl_src/std/textio.vhd|
+!i113 1
+Z20 o-debug -2008 -work std -dirpath {$MODEL_TECH/..}
+R12
+Bbody
+DPx4 work 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+R0
+33
+R1
+!i10b 1
+R2
+l0
+L186
+VOBFf4Pj<FG4ZXfzD:k]VN1
+!s100 OBFf4Pj<FG4ZXfzD:k]VN1
+R7
+R17
+R18
+R19
+!i113 1
+R20
+R12
+R13
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/omidt/OneDrive/Desktop/VHDL/Project
+T_opt
+!s110 1688358790
+VzHME4S?NWgmZ4P:R1^koQ2
+04 10 2 work tb_wsystem tb 1
+=1-c85b7619b8b2-64a24f86-19-3260
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4;61
+Etb_wsystem
+Z0 w1688358137
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/GitHub/sutech-fpga-1402
+Z4 8D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd
+Z5 FD:/GitHub/sutech-fpga-1402/TB_WSystem.vhd
+l0
+L4
+VkHc31dLehh<0DW559hI8J3
+!s100 o]oUjN8OC@3_8D[ANE6[S2
+Z6 OL;C;10.4;61
+32
+Z7 !s110 1688358707
+!i10b 1
+Z8 !s108 1688358707.823000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd|
+Z10 !s107 D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd|
+!i113 0
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Atb
+R1
+R2
+DEx4 work 10 tb_wsystem 0 22 kHc31dLehh<0DW559hI8J3
+l25
+L7
+V>6Id?Gk2=U5zj7fLE7MEz3
+!s100 99PfFklHo3]BdG7_E<4bm0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Ewsystem
+Z13 w1688358697
+R1
+R2
+R3
+Z14 8D:/GitHub/sutech-fpga-1402/WSystem.vhd
+Z15 FD:/GitHub/sutech-fpga-1402/WSystem.vhd
+l0
+L4
+V^SE9;aSbKWnni71VT6zhN1
+!s100 ?O5<l_zP]Q;0?=^W_anLn3
+R6
+32
+R7
+!i10b 1
+Z16 !s108 1688358707.573000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/GitHub/sutech-fpga-1402/WSystem.vhd|
+Z18 !s107 D:/GitHub/sutech-fpga-1402/WSystem.vhd|
+!i113 0
+R11
+R12
+Aws
+R1
+R2
+DEx4 work 7 wsystem 0 22 ^SE9;aSbKWnni71VT6zhN1
+l15
+L12
+V:JaBb5z_6l:hT:]`VcPHI2
+!s100 `VD5RXC9WTGVV5N_QZn980
+R6
+32
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R11
+R12

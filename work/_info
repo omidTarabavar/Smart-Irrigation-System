@@ -8,35 +8,43 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/omidt/OneDrive/Desktop/VHDL/Project
-Ewsystem
-Z0 w1688343488
+T_opt
+!s110 1688358790
+VzHME4S?NWgmZ4P:R1^koQ2
+04 10 2 work tb_wsystem tb 1
+=1-c85b7619b8b2-64a24f86-19-3260
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4;61
+Etb_wsystem
+Z0 w1688358137
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z3 dD:/GitHub/sutech-fpga-1402
-Z4 8D:/GitHub/sutech-fpga-1402/WSystem.vhd
-Z5 FD:/GitHub/sutech-fpga-1402/WSystem.vhd
+Z4 8D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd
+Z5 FD:/GitHub/sutech-fpga-1402/TB_WSystem.vhd
 l0
 L4
-V^SE9;aSbKWnni71VT6zhN1
-!s100 ?O5<l_zP]Q;0?=^W_anLn3
+VkHc31dLehh<0DW559hI8J3
+!s100 o]oUjN8OC@3_8D[ANE6[S2
 Z6 OL;C;10.4;61
 32
-Z7 !s110 1688343490
+Z7 !s110 1688358707
 !i10b 1
-Z8 !s108 1688343490.412000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/GitHub/sutech-fpga-1402/WSystem.vhd|
-Z10 !s107 D:/GitHub/sutech-fpga-1402/WSystem.vhd|
+Z8 !s108 1688358707.823000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd|
+Z10 !s107 D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd|
 !i113 0
 Z11 o-work work -2002 -explicit
 Z12 tExplicit 1
-Aws
+Atb
 R1
 R2
-DEx4 work 7 wsystem 0 22 ^SE9;aSbKWnni71VT6zhN1
-l15
-L12
-V1ce069ZQ>cSTz^<o<9<Xz3
-!s100 P9^=F@o>cJ`bm4W[aWPh@0
+DEx4 work 10 tb_wsystem 0 22 kHc31dLehh<0DW559hI8J3
+l25
+L7
+V>6Id?Gk2=U5zj7fLE7MEz3
+!s100 99PfFklHo3]BdG7_E<4bm0
 R6
 32
 R7
@@ -44,6 +52,45 @@ R7
 R8
 R9
 R10
+!i113 0
+R11
+R12
+Ewsystem
+Z13 w1688358697
+R1
+R2
+R3
+Z14 8D:/GitHub/sutech-fpga-1402/WSystem.vhd
+Z15 FD:/GitHub/sutech-fpga-1402/WSystem.vhd
+l0
+L4
+V^SE9;aSbKWnni71VT6zhN1
+!s100 ?O5<l_zP]Q;0?=^W_anLn3
+R6
+32
+R7
+!i10b 1
+Z16 !s108 1688358707.573000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/GitHub/sutech-fpga-1402/WSystem.vhd|
+Z18 !s107 D:/GitHub/sutech-fpga-1402/WSystem.vhd|
+!i113 0
+R11
+R12
+Aws
+R1
+R2
+DEx4 work 7 wsystem 0 22 ^SE9;aSbKWnni71VT6zhN1
+l15
+L12
+V:JaBb5z_6l:hT:]`VcPHI2
+!s100 `VD5RXC9WTGVV5N_QZn980
+R6
+32
+R7
+!i10b 1
+R16
+R17
+R18
 !i113 0
 R11
 R12

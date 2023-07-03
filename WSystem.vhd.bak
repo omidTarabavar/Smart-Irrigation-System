@@ -46,7 +46,7 @@ begin
 			STATE <= '0';
 			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
 			SEG <= "0000001";
-			elsif M >= "111" then
+			elsif MIN >= "111" then
 			NS <= ST0;
 			STATE <= '0';
 			LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
