@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity TB_WSystem is
+end entity TB_WSystem;
+
+architecture TB of TB_WSystem is
+
+component WSystem is
+	port(TIN,LIN,RESET,CLK : in std_logic;
+	    	MIN : in std_logic_vector(2 downto 0);
+		LOUT,TOUT,STATE : out std_logic;
+		MOUT : out std_logic_vector(2 downto 0);
+		SEG : out std_logic_vector(6 downto 0));
+end component;
+
+signal TIN1,LIN1,RESET1,CLK1 : std_logic := '0';
+signal MIN1 : std_logic_vector(2 downto 0) := "000";
+signal LOUT1,TOUT1,STATE1 : std_logic := '0';
+signal MOUT1 : std_logic_vector(2 downto 0) := "000";
+signal SEG1 : std_logic_vector(6 downto 0) := "0000000";
+
+constant CLK_PERIOD : time := 100 ns;
+
+begin
+CLK_PROC: process
+begin 
+	CLK1 <= '1';
+	wait for CLK_PERIOD / 2;
+	CLK1 <= '0';
+	wait for CLK_PERIOD / 2;
+end process;
+
+WSYSTEM: WSystem port map (
+		TIN => TIN1, LIN => LIN1, RESET => RESET1, CLK => CLK1, MIN => MIN1,
+		LOUT => LOUT1, TOUT => TOUT1, STATE => STATE1, MOUT => MOUT1, SEG => SEG1);
