@@ -9,14 +9,17 @@ architecture TB of TB_WSystem is
 component WSystem is
 	port(TIN,LIN,RESET,CLK : in std_logic;
 	    	MIN : in std_logic_vector(2 downto 0);
-		LOUT,TOUT,STATE : out std_logic;
+		LOUT,TOUT : out std_logic;
+		STATE : out std_logic_vector(1 downto 0);
 		MOUT : out std_logic_vector(2 downto 0);
 		SEG : out std_logic_vector(6 downto 0));
 end component;
 
-signal TIN1,LIN1,RESET1,CLK1 : std_logic := '0';
+signal TIN1,LIN1,CLK1 : std_logic := '0';
+signal RESET1 : std_logic := '0';
 signal MIN1 : std_logic_vector(2 downto 0) := "000";
-signal LOUT1,TOUT1,STATE1 : std_logic := '0';
+signal LOUT1,TOUT1 : std_logic := '0';
+signal STATE1 : std_logic_vector(1 downto 0) := "11";
 signal MOUT1 : std_logic_vector(2 downto 0) := "000";
 signal SEG1 : std_logic_vector(6 downto 0) := "0000000";
 
@@ -45,5 +48,8 @@ begin
 	TIN1 <= '1'; LIN1 <= '0'; MIN1 <= "101"; wait for 100 ns;
 	TIN1 <= '0'; LIN1 <= '0'; MIN1 <= "001"; wait for 100 ns;
 	TIN1 <= '0'; LIN1 <= '1'; MIN1 <= "111"; wait for 100 ns;
+	TIN1 <= '1'; LIN1 <= '0'; MIN1 <= "000"; wait for 100 ns;
+	RESET1 <= '1'; wait for 100 ns;
+	RESET1 <= '0';
 end process;
 end architecture;
