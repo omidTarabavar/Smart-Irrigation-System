@@ -15,8 +15,11 @@ signal PS,NS : STATE_TYPE;
 begin
 CLK_PROC :  process(RESET,NS,CLK)
 begin
-	if (RESET = '1') then PS <= ST0;
+	if (RESET = '1') then 
+	PS <= ST0;
 	elsif rising_edge(CLK) then PS <= NS;
+	else
+	PS <= PS;
 	end if;
 end process;
 

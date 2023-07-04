@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jul  3 21:37:41 2023
+# Process ID: 5124
+# Current directory: D:/GitHub/sutech-fpga-1402/WSystemVivado/WSystemVivado.runs/synth_1
+# Command line: vivado.exe -log WSystem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source WSystem.tcl
+# Log file: D:/GitHub/sutech-fpga-1402/WSystemVivado/WSystemVivado.runs/synth_1/WSystem.vds
+# Journal file: D:/GitHub/sutech-fpga-1402/WSystemVivado/WSystemVivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source WSystem.tcl -notrace

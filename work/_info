@@ -9,10 +9,10 @@ z2
 cModel Technology
 dC:/Users/omidt/OneDrive/Desktop/VHDL/Project
 T_opt
-!s110 1688358790
-VzHME4S?NWgmZ4P:R1^koQ2
+!s110 1688440610
+VWRK<84I`7VlJSDe7XB;Nb2
 04 10 2 work tb_wsystem tb 1
-=1-c85b7619b8b2-64a24f86-19-3260
+=1-c85b7619b8b2-64a38f21-fe-31a4
 o-quiet -auto_acc_if_foreign -work work
 n@_opt
 OL;O;10.4;61
@@ -29,9 +29,9 @@ VkHc31dLehh<0DW559hI8J3
 !s100 o]oUjN8OC@3_8D[ANE6[S2
 Z6 OL;C;10.4;61
 32
-Z7 !s110 1688358707
+Z7 !s110 1688440589
 !i10b 1
-Z8 !s108 1688358707.823000
+Z8 !s108 1688440589.640000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd|
 Z10 !s107 D:/GitHub/sutech-fpga-1402/TB_WSystem.vhd|
 !i113 0
@@ -56,7 +56,7 @@ R10
 R11
 R12
 Ewsystem
-Z13 w1688358697
+Z13 w1688403715
 R1
 R2
 R3
@@ -70,7 +70,7 @@ R6
 32
 R7
 !i10b 1
-Z16 !s108 1688358707.573000
+Z16 !s108 1688440589.030000
 Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/GitHub/sutech-fpga-1402/WSystem.vhd|
 Z18 !s107 D:/GitHub/sutech-fpga-1402/WSystem.vhd|
 !i113 0
@@ -82,8 +82,8 @@ R2
 DEx4 work 7 wsystem 0 22 ^SE9;aSbKWnni71VT6zhN1
 l15
 L12
-V:JaBb5z_6l:hT:]`VcPHI2
-!s100 `VD5RXC9WTGVV5N_QZn980
+Vg7Q:i=I=:@SBWEmg4da_93
+!s100 emzNFG1^n<if2Y3V3^G_X0
 R6
 32
 R7
