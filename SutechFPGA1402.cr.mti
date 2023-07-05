@@ -14,4 +14,11 @@ Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling entity TB_WSystem
 -- Compiling architecture TB of TB_WSystem
 
+} {} {}} D:/GitHub/sutech-fpga-1402/WSystemPKG.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\GitHub\sutech-fpga-1402\WSystemPKG.vhd}
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package WSystemPKG
+
 } {} {}}

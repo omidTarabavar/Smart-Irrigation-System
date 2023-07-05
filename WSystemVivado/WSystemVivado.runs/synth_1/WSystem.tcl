@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
 create_project -in_memory -part xc7vx485tffg1157-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -26,7 +25,7 @@ set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir D:/GitHub/sutech-fpga-1402/WSystemVivado/WSystemVivado.cache/wt [current_project]
 set_property parent.project_path D:/GitHub/sutech-fpga-1402/WSystemVivado/WSystemVivado.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
 set_property ip_output_repo d:/GitHub/sutech-fpga-1402/WSystemVivado/WSystemVivado.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib D:/GitHub/sutech-fpga-1402/WSystem.vhd

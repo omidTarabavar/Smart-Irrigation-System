@@ -1,6 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-
+package WSystemPKG is
+	type STATE_TYPE is (ST0,ST1,ST2);
+end package WSystemPKG;
 entity WSystem is
 	port(TIN,LIN,RESET,CLK : in std_logic;
 	    	MIN : in std_logic_vector(2 downto 0);
@@ -34,44 +36,38 @@ begin
 	end if;
 end process;
 
---STATE_PROC : process(NS)
---begin
---	if(NS = ST1) then
---		STATE <= "01";
---	elsif (NS = ST0) then
---		STATE <= "00";
---	else
---		STATE <= "01";
---	end if;
---end process;
+STATE_PROC : process(NS)
+begin
+	if(NS = ST1) then
+		STATE <= "01";
+	elsif (NS = ST0) then
+		STATE <= "00";
+	else
+		STATE <= "01";
+	end if;
+end process;
+
 CMB_PROC : process(TIN,LIN,MIN,PS)
 begin
 	case PS is 
 		when ST0 =>
 			if (TIN = '1' or LIN = '1') and MIN <= "001" then 
 			NS <= ST1;
-			STATE <= "01";
 			elsif (TIN = '0' and LIN = '0') and MIN <= "011" then
 			NS <= ST1;
-			STATE <= "01";
 			else
 			NS <= ST0;
-			STATE <= "00";
 			end if;
 		when ST1 =>
 			if (TIN = '1' or LIN = '1') and MIN >= "011" then
 			NS <= ST0;
-			STATE <= "00";
 			elsif MIN >= "111" then
 			NS <= ST0;
-			STATE <= "00";
 			else
 			NS <= ST1;
-			STATE <= "01";
 			end if;
 		when others =>
 			NS <= ST0;
-			STATE <= "00";
 	end case;
 	LOUT <= LIN; TOUT <= TIN; MOUT <= MIN;
 end process;

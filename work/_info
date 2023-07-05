@@ -7,7 +7,7 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/omidt/OneDrive/Desktop/VHDL/Project
+Z0 dC:/Users/omidt/OneDrive/Desktop/VHDL/Project
 T_opt
 !s110 1688445434
 V_5CMl3>:fNV7FLZ0zjT6I2
@@ -16,81 +16,103 @@ V_5CMl3>:fNV7FLZ0zjT6I2
 o-quiet -auto_acc_if_foreign -work work
 n@_opt
 OL;O;10.4;61
+R0
 Etb_wsystem
-Z0 w1688444235
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z3 dD:/GitHub/sutech-fpga-1402
-Z4 8D:\GitHub\sutech-fpga-1402\TB_WSystem.vhd
-Z5 FD:\GitHub\sutech-fpga-1402\TB_WSystem.vhd
+Z1 w1688444235
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/GitHub/sutech-fpga-1402
+Z5 8D:\GitHub\sutech-fpga-1402\TB_WSystem.vhd
+Z6 FD:\GitHub\sutech-fpga-1402\TB_WSystem.vhd
 l0
 L4
 VkHc31dLehh<0DW559hI8J3
 !s100 o]oUjN8OC@3_8D[ANE6[S2
-Z6 OL;C;10.4;61
+Z7 OL;C;10.4;61
 32
-Z7 !s110 1688445037
+Z8 !s110 1688463168
 !i10b 1
-Z8 !s108 1688445037.686000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:\GitHub\sutech-fpga-1402\TB_WSystem.vhd|
-Z10 !s107 D:\GitHub\sutech-fpga-1402\TB_WSystem.vhd|
+Z9 !s108 1688463168.794000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:\GitHub\sutech-fpga-1402\TB_WSystem.vhd|
+Z11 !s107 D:\GitHub\sutech-fpga-1402\TB_WSystem.vhd|
 !i113 0
-Z11 o-work work -2002 -explicit
-Z12 tExplicit 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
 Atb
-R1
 R2
+R3
 DEx4 work 10 tb_wsystem 0 22 kHc31dLehh<0DW559hI8J3
 l28
 L7
 V9PeIzhVo1fPgaMm?Vnb3O0
 !s100 Wzgm[3I415OJ?h]FnjXmg2
-R6
-32
 R7
-!i10b 1
+32
 R8
+!i10b 1
 R9
 R10
-!i113 0
 R11
+!i113 0
 R12
+R13
 Ewsystem
-Z13 w1688445413
-R1
+Z14 w1688459579
 R2
 R3
-Z14 8D:\GitHub\sutech-fpga-1402\WSystem.vhd
-Z15 FD:\GitHub\sutech-fpga-1402\WSystem.vhd
+R4
+Z15 8D:\GitHub\sutech-fpga-1402\WSystem.vhd
+Z16 FD:\GitHub\sutech-fpga-1402\WSystem.vhd
 l0
 L4
 V1`[mh<Xz@NIOMo`^UdAQ]3
 !s100 gARHm;26L:;J6zXcdJXZe2
-R6
+R7
 32
-Z16 !s110 1688445418
+R8
 !i10b 1
-Z17 !s108 1688445418.096000
+Z17 !s108 1688463168.597000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:\GitHub\sutech-fpga-1402\WSystem.vhd|
 Z19 !s107 D:\GitHub\sutech-fpga-1402\WSystem.vhd|
 !i113 0
-R11
 R12
+R13
 Aws
-R1
 R2
+R3
 DEx4 work 7 wsystem 0 22 1`[mh<Xz@NIOMo`^UdAQ]3
 l17
 L13
 V2kYIBK5D;Qn6^zD51S>UK2
 !s100 `[FQg=RIz7X1L[F]Q9SPz3
-R6
+R7
 32
-R16
+R8
 !i10b 1
 R17
 R18
 R19
 !i113 0
-R11
 R12
+R13
+Pwsystempkg
+R2
+R3
+w1688460985
+R4
+8D:\GitHub\sutech-fpga-1402\WSystemPKG.vhd
+FD:\GitHub\sutech-fpga-1402\WSystemPKG.vhd
+l0
+L3
+VzXR8UOBz69]Yan6@I9TLd3
+!s100 :nmn[;K7gB2Qne_lk635@2
+R7
+32
+!s110 1688463169
+!i10b 1
+!s108 1688463169.019000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:\GitHub\sutech-fpga-1402\WSystemPKG.vhd|
+!s107 D:\GitHub\sutech-fpga-1402\WSystemPKG.vhd|
+!i113 0
+R12
+R13
