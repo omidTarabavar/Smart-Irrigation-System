@@ -1,0 +1,9 @@
+*.runs/
+*.sim/
+*.cache/
+*.hw/
+*.ip_user_files/
+Source/work/
+*.wlf
+*.bak
+*.rar
